@@ -13,11 +13,17 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    scoreboardmenu.cpp \
+    difficultymenu.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    scoreboardmenu.h \
+    difficultymenu.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    scoreboardmenu.ui \
+    difficultymenu.ui
 
 RESOURCES += \
     MyResource.qrc

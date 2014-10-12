@@ -42,5 +42,15 @@ void MainWindow::on_actionExit_triggered()
 //Pressing Difficulty, the program difficulty changes. (easy, medium, hard)
 void MainWindow::on_actionDifficulty_triggered()
 {
+    difficultyMenu difficulty;
+    difficulty.setModal(true);
+    difficulty.exec();
+}
 
+//Pressing Scoreboard, shows the score from highest to lowest.
+void MainWindow::on_actionScoreboard_triggered()
+{
+    scoreboardMenu scoreboard;
+    scoreboard.setModal(true);
+    scoreboard.exec();
 }

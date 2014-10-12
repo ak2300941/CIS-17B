@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "scoreboardmenu.h"
+#include "difficultymenu.h"
 
 namespace Ui {
 class MainWindow;
@@ -26,8 +28,12 @@ private slots:
 
     void on_actionDifficulty_triggered();
 
+    void on_actionScoreboard_triggered();
+
 private:
     Ui::MainWindow *ui;
+    //Scoring
+    int points;
 };
 
 #endif // MAINWINDOW_H

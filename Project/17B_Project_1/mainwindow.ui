@@ -45,8 +45,8 @@
     <addaction name="actionScoreboard"/>
    </widget>
    <addaction name="menuFile"/>
-   <addaction name="menuOptions"/>
    <addaction name="menuHighscore"/>
+   <addaction name="menuOptions"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
