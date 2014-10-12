@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2014-10-07T12:01:53
+# Project created by QtCreator 2014-10-12T14:12:47
 #
 #-------------------------------------------------
 
@@ -13,11 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        gamemenu.cpp \
-    optionmenu.cpp
+        mainwindow.cpp
 
-HEADERS  += gamemenu.h \
-    optionmenu.h
+HEADERS  += mainwindow.h
 
-FORMS    += gamemenu.ui \
-    optionmenu.ui
+FORMS    += mainwindow.ui
+
+RESOURCES += \
+    MyResource.qrc
