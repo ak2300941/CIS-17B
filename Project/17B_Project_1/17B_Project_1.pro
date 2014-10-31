@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2014-10-12T14:12:47
+# Project created by QtCreator 2014-10-30T22:09:45
 #
 #-------------------------------------------------
 
@@ -14,16 +14,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    scoreboardmenu.cpp \
-    difficultymenu.cpp
+    settingmenu.cpp
 
 HEADERS  += mainwindow.h \
-    scoreboardmenu.h \
-    difficultymenu.h
+    settingmenu.h
 
 FORMS    += mainwindow.ui \
-    scoreboardmenu.ui \
-    difficultymenu.ui
-
-RESOURCES += \
-    MyResource.qrc
+    settingmenu.ui

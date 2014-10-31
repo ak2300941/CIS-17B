@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QtCore>
-#include <QtGui>
+#include "settingmenu.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -15,42 +14,9 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-//Pressing New, game starts from the beginning.
-void MainWindow::on_actionNew_triggered()
+void MainWindow::on_newButton_clicked()
 {
-    QMessageBox::information(this,"New File","(Create New Game)");
-}
-
-//Pressing Open, reads in past highscores.
-void MainWindow::on_actionOpen_triggered()
-{
-    QMessageBox::information(this,"Open File","(Create Open Save: Highscore Scoreboard");
-}
-
-//Pressing Save, writes in highscores.
-void MainWindow::on_actionSave_triggered()
-{
-    QMessageBox::information(this,"Save File","(Create a Save Program for Highscore)");
-}
-
-//Pressing Exit, the program closes.
-void MainWindow::on_actionExit_triggered()
-{
-    close();
-}
-
-//Pressing Difficulty, the program difficulty changes. (easy, medium, hard)
-void MainWindow::on_actionDifficulty_triggered()
-{
-    difficultyMenu difficulty;
-    difficulty.setModal(true);
-    difficulty.exec();
-}
-
-//Pressing Scoreboard, shows the score from highest to lowest.
-void MainWindow::on_actionScoreboard_triggered()
-{
-    scoreboardMenu scoreboard;
-    scoreboard.setModal(true);
-    scoreboard.exec();
+    settingMenu *k=new settingMenu;
+    k->show();
+    this->close();
 }
