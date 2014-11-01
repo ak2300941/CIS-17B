@@ -14,10 +14,13 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    settingmenu.cpp
+    settingmenu.cpp \
+    gamewindow.cpp
 
 HEADERS  += mainwindow.h \
-    settingmenu.h
+    settingmenu.h \
+    gamewindow.h
 
 FORMS    += mainwindow.ui \
-    settingmenu.ui
+    settingmenu.ui \
+    gamewindow.ui

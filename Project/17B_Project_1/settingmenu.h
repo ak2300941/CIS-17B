@@ -2,6 +2,12 @@
 #define SETTINGMENU_H
 
 #include <QDialog>
+#include <QString>
+#include <QFile>
+#include <QTextStream>
+
+#include "QMessageBox"
+#include "gamewindow.h"
 
 namespace Ui {
 class settingMenu;
@@ -27,6 +33,8 @@ private slots:
     void on_checkDifficulty_clicked();
 
     void on_checkName_clicked();
+
+    void on_startgameButton_clicked();
 
 private:
     Ui::settingMenu *ui;
