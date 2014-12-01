@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    //qApp->setStyleSheet("#groupBox { background-color: yellow }");
+
 }
 
 MainWindow::~MainWindow()
@@ -20,3 +22,4 @@ void MainWindow::on_newButton_clicked()
     k->show();
     this->close();
 }
+

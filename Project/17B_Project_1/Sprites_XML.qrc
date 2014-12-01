@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/xml">
+        <file>SpriteGuy.xml</file>
+    </qresource>
+    <qresource prefix="/new/prefix1"/>
+</RCC>

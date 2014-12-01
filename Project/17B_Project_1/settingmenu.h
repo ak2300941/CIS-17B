@@ -2,12 +2,7 @@
 #define SETTINGMENU_H
 
 #include <QDialog>
-#include <QString>
-#include <QFile>
-#include <QTextStream>
-
-#include "QMessageBox"
-#include "gamewindow.h"
+#include "storage.h"
 
 namespace Ui {
 class settingMenu;
@@ -20,7 +15,6 @@ class settingMenu : public QDialog
 public:
     explicit settingMenu(QWidget *parent = 0);
     ~settingMenu();
-
 private slots:
     void on_easyButton_clicked();
 
@@ -34,13 +28,14 @@ private slots:
 
     void on_checkName_clicked();
 
-    void on_startgameButton_clicked();
+    void on_startButton_clicked();
 
 private:
     Ui::settingMenu *ui;
     QString name;
     bool checkn;
     bool checkd;
+    int diff;
 };
 
 #endif // SETTINGMENU_H

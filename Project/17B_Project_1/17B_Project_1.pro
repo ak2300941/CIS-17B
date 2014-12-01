@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       +=xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -15,12 +16,24 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     settingmenu.cpp \
-    gamewindow.cpp
+    gamewindow.cpp \
+    enemies.cpp \
+    player.cpp \
+    gameover.cpp \
+    storage.cpp
 
 HEADERS  += mainwindow.h \
     settingmenu.h \
-    gamewindow.h
+    gamewindow.h \
+    enemies.h \
+    player.h \
+    gameover.h \
+    storage.h
 
 FORMS    += mainwindow.ui \
     settingmenu.ui \
-    gamewindow.ui
+    gamewindow.ui \
+    gameover.ui
+
+RESOURCES += \
+    Sprites.qrc

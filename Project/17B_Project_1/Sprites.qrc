@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Sprites.png</file>
+        <file>down1.png</file>
+        <file>down2.png</file>
+        <file>down3.png</file>
+        <file>left1.png</file>
+        <file>left2.png</file>
+        <file>left3.png</file>
+        <file>right1.png</file>
+        <file>right2.png</file>
+        <file>right3.png</file>
+        <file>up1.png</file>
+        <file>up2.png</file>
+        <file>up3.png</file>
+    </qresource>
+    <qresource prefix="/xml">
+        <file>SpriteGuy.xml</file>
+    </qresource>
+</RCC>
