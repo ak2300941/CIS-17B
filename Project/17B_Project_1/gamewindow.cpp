@@ -10,9 +10,9 @@ gameWindow::gameWindow(QWidget *parent) :
     storage temp;
     name=temp.getName();
     diff=temp.getDiff();
-    qDebug()<<"Testing Storage: ";
-    qDebug()<<name;
-    qDebug()<<diff;
+//    qDebug()<<"Testing Storage: ";
+//    qDebug()<<name;
+//    qDebug()<<diff;
     //Write in the name at the botton
     ui->nameLabel->setText(name);
     //Set up the points system
