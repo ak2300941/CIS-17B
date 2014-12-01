@@ -13,6 +13,12 @@
         <file>up1.png</file>
         <file>up2.png</file>
         <file>up3.png</file>
+        <file>ESprites.png</file>
+        <file>enemy1.png</file>
+        <file>enemy2.png</file>
+        <file>enemy3.png</file>
+        <file>NND_BackgroundsTextures.png</file>
+        <file>tile.png</file>
     </qresource>
     <qresource prefix="/xml">
         <file>SpriteGuy.xml</file>

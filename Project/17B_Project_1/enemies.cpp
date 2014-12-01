@@ -7,6 +7,11 @@ enemies::enemies()
     setRotation(angle);
     //Set the speed (% of pixel at a time)
     speed=5;
+    //Setup Sprite
+    //Enemy
+    enemy.append(QPixmap(":enemy1.png"));
+    enemy.append(QPixmap(":enemy2.png"));
+    enemy.append(QPixmap(":enemy3.png"));
     //Random start position
     int StartX=0;
     int StartY=0;
@@ -31,23 +36,26 @@ QRectF enemies::boundingRect() const
 
 void enemies::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    QRectF rec=boundingRect();
-    QBrush Brush(Qt::gray);
+//    QRectF rec=boundingRect();
+//    QBrush Brush(Qt::gray);
     //Basic Collision Detection
     if(scene()->collidingItems(this).isEmpty())
     {
         //No Collision if empty (Green)
-        Brush.setColor(Qt::green);
+//        Brush.setColor(Qt::green);
     }
     else
     {
         //Collision (Red)
-        Brush.setColor((Qt::red));
+//        Brush.setColor((Qt::red));
         //Set the position
         DoCollision();
     }
-    painter->fillRect(rec,Brush);
-    painter->drawRect(rec);
+//    painter->fillRect(rec,Brush);
+//    painter->drawRect(rec);
+    //Animate the person
+    mCurrentFrame=++mCurrentFrame%3;
+    painter->drawPixmap(mPos,(enemy)[mCurrentFrame]);
 }
 
 void enemies::advance(int phase)

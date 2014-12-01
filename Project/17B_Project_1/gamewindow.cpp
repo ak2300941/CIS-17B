@@ -24,6 +24,8 @@ gameWindow::gameWindow(QWidget *parent) :
     ui->graphicsView->setRenderHint(QPainter::Antialiasing);
     //Set the Borders of the Graphic Scene
     scene->setSceneRect(-200,-200,300,300);
+    QPixmap pim(":tile.png");
+    scene->setBackgroundBrush(pim.scaled(300,300,Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
     //Initializing Borderlines
     QPen mypen=QPen(Qt::red);
     QLineF TopLine(scene->sceneRect().topLeft(),scene->sceneRect().topRight());
@@ -74,6 +76,7 @@ void gameWindow::endGame()
 
 void gameWindow::updater()
 {
+    //When collided with an enemy
     if(user->collidesWithItem(enemy)){
         //So doesn't spam collisions
         user->setPos(500,500);

@@ -19,6 +19,11 @@ private:
     qreal speed;
     bool moving;
     void DoCollision();
+    //Sprite Stuff
+    QPixmap* mSpriteImage;
+    int mCurrentFrame;
+    QPoint mPos;
+    QList<QPixmap> enemy;
 };
 
 #endif // ENEMIES_H
