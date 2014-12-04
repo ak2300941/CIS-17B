@@ -22,8 +22,8 @@
      <rect>
       <x>180</x>
       <y>150</y>
-      <width>141</width>
-      <height>91</height>
+      <width>131</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -40,7 +40,7 @@
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>20</y>
+       <y>10</y>
        <width>75</width>
        <height>23</height>
       </rect>
@@ -59,7 +59,7 @@ color: rgb(255, 170, 0)</string>
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>50</y>
+       <y>70</y>
        <width>75</width>
        <height>23</height>
       </rect>
@@ -72,6 +72,25 @@ color: rgb(255, 170, 0)</string>
      </property>
      <property name="text">
       <string>Exit</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="highscoreButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">text-align: center;
+spacing: 1px; /* spacing between items in the tool bar */
+background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0 #323232, stop: 0.5 #242424, stop:1 #323232);
+color: rgb(255, 170, 0)</string>
+     </property>
+     <property name="text">
+      <string>Score</string>
      </property>
     </widget>
    </widget>
@@ -157,7 +176,7 @@ color: rgb(255, 170, 0)</string>
    <hints>
     <hint type="sourcelabel">
      <x>278</x>
-     <y>243</y>
+     <y>275</y>
     </hint>
     <hint type="destinationlabel">
      <x>402</x>

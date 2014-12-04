@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "highscore.h"
+#include "settingmenu.h"
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +19,8 @@ public:
 
 private slots:
     void on_newButton_clicked();
+
+    void on_highscoreButton_clicked();
 
 private:
     Ui::MainWindow *ui;

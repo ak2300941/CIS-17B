@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "settingmenu.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -23,3 +22,10 @@ void MainWindow::on_newButton_clicked()
     this->close();
 }
 
+
+void MainWindow::on_highscoreButton_clicked()
+{
+    highscore *k=new highscore;
+    k->show();
+    this->close();
+}

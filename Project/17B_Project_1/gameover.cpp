@@ -8,7 +8,16 @@ gameOver::gameOver(QWidget *parent) :
     ui->setupUi(this);
     storage temp;
     points=temp.getPoints();
+    name=temp.getName();
     ui->scoreLabel->setNum(points);
+    //Write Score to file
+    QString filename="highscore.txt";
+    QFile mFile(filename);
+    if(mFile.open(QFile::WriteOnly|QFile::Text|QFile::Append)){
+        QTextStream out(&mFile);
+        out<<name<<" "<<points<<endl;
+    }
+    mFile.close();
 }
 
 gameOver::~gameOver()

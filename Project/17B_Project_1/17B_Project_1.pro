@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     enemies.cpp \
     player.cpp \
     gameover.cpp \
-    storage.cpp
+    storage.cpp \
+    highscore.cpp
 
 HEADERS  += mainwindow.h \
     settingmenu.h \
@@ -28,12 +29,14 @@ HEADERS  += mainwindow.h \
     enemies.h \
     player.h \
     gameover.h \
-    storage.h
+    storage.h \
+    highscore.h
 
 FORMS    += mainwindow.ui \
     settingmenu.ui \
     gamewindow.ui \
-    gameover.ui
+    gameover.ui \
+    highscore.ui
 
 RESOURCES += \
     Sprites.qrc

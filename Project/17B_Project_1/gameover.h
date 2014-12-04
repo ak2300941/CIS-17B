@@ -2,6 +2,7 @@
 #define GAMEOVER_H
 
 #include <QWidget>
+#include <QFile>
 #include "gamewindow.h"
 
 namespace Ui {
@@ -22,6 +23,7 @@ private slots:
 private:
     Ui::gameOver *ui;
     int points;
+    QString name;
 };
 
 #endif // GAMEOVER_H

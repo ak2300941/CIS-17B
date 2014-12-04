@@ -98,4 +98,5 @@ void gameWindow::updater()
     }
 
     ui->scoreLabel->setNum(points);
+    update();
 }
