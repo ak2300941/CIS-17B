@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\settingmenu.o
+./debug\gamewindow.o
+./debug\enemies.o
+./debug\player.o
+./debug\gameover.o
+./debug\storage.o
+./debug\highscore.o
+./debug\moc_mainwindow.o
+./debug\moc_settingmenu.o
+./debug\moc_gamewindow.o
+./debug\moc_gameover.o
+./debug\moc_highscore.o
+./debug\qrc_Sprites.o
+);
