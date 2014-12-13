@@ -1,0 +1,17 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\settingmenu.o
+./release\gamewindow.o
+./release\enemies.o
+./release\player.o
+./release\gameover.o
+./release\storage.o
+./release\highscore.o
+./release\moc_mainwindow.o
+./release\moc_settingmenu.o
+./release\moc_gamewindow.o
+./release\moc_gameover.o
+./release\moc_highscore.o
+./release\qrc_Sprites.o
+);
